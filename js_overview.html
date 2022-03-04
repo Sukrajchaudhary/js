@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <style>
+        div{
+            color: white;
+            height: 300px;
+            width: 250px;
+            border:10px groove teal;
+            transform: translate(50% ,50%);
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div onclick="changecolor(this)" style="background-color: red;" >
+    <h4>Tap me to change color</h4>
+    </div>
+    
+</body>
+<script>
+function changecolor(s) {
+    let presentcolor=s.style.backgroundColor;
+    if(presentcolor=="red"){
+        s.style.backgroundColor="green";
+    }
+    else{
+        s.style.backgroundColor="red";
+    }
+    
+}
+</script>
+</html>
